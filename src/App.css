@@ -1,0 +1,45 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend:wght@100..900&family=Lilita+One&family=Pacifico&family=Playwrite+GB+J:ital,wght@0,100..400;1,100..400&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color:#fff;
+}
+
+/*
+:root{
+ cor-verde:#4F5A21;
+ cor-verde2#325A21;
+ cor-verde3#215A2C;
+}
+*/
+/*Header*/
+
+h2{
+  color:#000;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4rem;
+  background-color:transparent;
+}
+
+header h2{
+  font-family: "Playwrite GB J", cursive;
+  color:linear-gradient(to right,);
+}
+
+header nav ul{
+  display:flex;
+  gap:1rem;
+}
+
+/*-----------------*/
+
+
+
