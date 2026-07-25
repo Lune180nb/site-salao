@@ -6,7 +6,7 @@ function SobreNos(){
         <h2>Quem somos?</h2>
       </div>
       <div className = "descricao">
-       <img src = "Hero2.jpg" alt = ""/>
+       <img src = "SobreNos.jpg" alt = ""/>
         <p>No nosso salão de beleza, acreditamos que cada pessoa merece sentir-se confiante e valorizada. Nossa equipe é dedicada a oferecer um atendimento acolhedor, com serviços de qualidade e atenção aos detalhes.
           
           Trabalhamos com profissionalismo, produtos selecionados e técnicas atualizadas para proporcionar uma experiência agradável, sempre respeitando o estilo e as necessidades de cada cliente.
