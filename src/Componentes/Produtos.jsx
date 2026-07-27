@@ -1,5 +1,6 @@
 
 import {useEffect,useRef} from "react"
+import servico from "./servicos.jpg"
 
 function Produtos({mostrarEsquerda,mostrarDireita,index}){
   const cardRef = useRef(null)
@@ -40,7 +41,7 @@ function Produtos({mostrarEsquerda,mostrarDireita,index}){
             <a href = "#" className = "link-whatsapp">Agenda aqui</a>
           </div>
             <div className = "cards" style = {{transform:`translateX(-${index * 100}%)`}}>
-            <img src = "./Servicos2.jpg"/>
+            <img src = {servico}/>
             <h2>Coloração</h2>
             <p>
 Transforme o visual com técnicas de coloração, luzes e retoques realizados com produtos de alta qualidade.</p>
