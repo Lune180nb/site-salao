@@ -1,5 +1,6 @@
 
 import {useEffect,useRef} from "react"
+import SobreNos from "./SobreNos.jpg"
 
 function SobreNos(){
   
@@ -30,7 +31,7 @@ function SobreNos(){
         <h2 ref = {cardRef} className = "cima">Quem somos?</h2>
       </div>
       <div className = "descricao">
-       <img ref = {cardRef2} className = "esquerda" src = "SobreNos.jpg" alt = ""/>
+       <img ref = {cardRef2} className = "esquerda" src = {SobreNos} alt = ""/>
         <p ref = {cardRef3} className = "direita">No nosso salão de beleza, acreditamos que cada pessoa merece sentir-se confiante e valorizada. Nossa equipe é dedicada a oferecer um atendimento acolhedor, com serviços de qualidade e atenção aos detalhes.
           
           Trabalhamos com profissionalismo, produtos selecionados e técnicas atualizadas para proporcionar uma experiência agradável, sempre respeitando o estilo e as necessidades de cada cliente.
