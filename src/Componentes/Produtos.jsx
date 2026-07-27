@@ -1,13 +1,36 @@
 
+import {useEffect,useRef} from "react"
+
 function Produtos({mostrarEsquerda,mostrarDireita,index}){
+  const cardRef = useRef(null)
+  const cardRef2 = useRef(null)
+  const cardRef3 = useRef(null)
+  
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if(entry.isIntersecting){
+          entry.target.classList.add("ativo")
+        }
+      })
+    })
+    observer.observe(cardRef.current)
+    observer.observe(cardRef2.current)
+    observer.observe(cardRef3.current)
+    
+    return () => {
+      observer.disconnect()
+    }
+  },[])
+  
   return(<>
     <div className = "Produtos" id = "Servicos">
         <div className = "info-produtos">
-        <h2>Nosso Serviços</h2>
-        <p>Transforme seu visual com quem entende de beleza.
+        <h2 ref = {cardRef} className = "esquerda">Nosso Serviços</h2>
+        <p ref = {cardRef2} className = "direita">Transforme seu visual com quem entende de beleza.
         </p>
       </div>
-      <div className = "produtos-servicos">
+      <div ref = {cardRef3} className = "produtos-servicos baixo">
       <button onClick = { mostrarEsquerda} className = "esquerda">&#10094;</button>
         <div className = "slides">
           <div className = "cards" style = {{transform:`translateX(-${index * 100}%)`}}>
