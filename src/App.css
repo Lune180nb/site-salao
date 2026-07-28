@@ -32,7 +32,7 @@ header h2{
 
 header nav ul{
   display:flex;
-  gap:2rem;
+  gap:1rem;
 }
 
 header nav a,.menuResponsivo ul a{
@@ -212,6 +212,7 @@ header nav a:hover,.menuResponsivo ul a:hover{
 .Produtos .info-produtos{
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   width:100%;
 }
 
@@ -551,14 +552,16 @@ header nav a:hover,.menuResponsivo ul a:hover{
 
 /*Responsividade*/
 
-/* Celulares */
-@media (max-width:768px){
+/* Tablet */
+@media (max-width: 1094px) {
+  
+/*Header*/
 
-  html{
+html{
     scroll-padding-top:80px;
   }
 
-  header{
+header{
     padding:1rem 1.5rem;
   }
 
@@ -586,7 +589,72 @@ header nav a:hover,.menuResponsivo ul a:hover{
     transform:translateY(0);
     pointer-events:auto;
   }
+  
+  /*-----------------*/
+  
+  /*Hero*/
 
+  .Hero img{
+    max-width: 450px;
+  }
+  
+  /*-----------------*/
+  
+  /*Produtos*/
+
+ .Produtos .info-produtos{
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap:2rem;
+    padding: 2rem;
+  }
+  
+  .Produtos .info-produtos h2{
+    line-height: 2;
+  }
+
+  .Produtos .produtos-servicos{
+    gap:.5rem;
+  }
+
+  .Produtos .produtos-servicos .slides{
+    width:100%;
+    max-width:400px;
+  }
+
+  .Produtos .produtos-servicos .slides .cards{
+    min-height:auto;
+  }
+
+  .Produtos .produtos-servicos .slides .cards img{
+    width:100%;
+    min-width:400px;
+  }
+
+  .Produtos .produtos-servicos button{
+    padding:.7rem;
+    font-size:1.2rem;
+  }
+  
+  /*-----------------*/
+
+
+  .SobreNos .descricao{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .SobreNos .descricao img{
+    min-width: 100%;
+    max-width: 500px;
+  }
+}
+
+/* Celulares */
+@media (max-width:768px){
+  
   /* Hero */
 
   .Hero{
@@ -622,49 +690,12 @@ header nav a:hover,.menuResponsivo ul a:hover{
     padding:4rem 2rem;
   }
 
-  .Produtos .info-produtos{
-    flex-direction:column;
-    text-align:center;
-    gap:2rem;
-    padding: 2rem;
-  }
-  
-  .Produtos .info-produtos h2{
-    line-height: 2;
-  }
-
-  .Produtos .produtos-servicos{
-    gap:.5rem;
-  }
-
-  .Produtos .produtos-servicos .slides{
-    max-width:400px;
-  }
-
-  .Produtos .produtos-servicos .slides .cards{
-    min-height:auto;
-  }
-
-  .Produtos .produtos-servicos .slides .cards img{
-    width:100%;
-    min-width:400px;
-  }
-
-  .Produtos .produtos-servicos button{
-    padding:.7rem;
-    font-size:1.2rem;
-  }
-
   /* Sobre nós */
 
   .SobreNos{
     padding:2rem 1.5rem;
   }
 
-  .SobreNos .descricao{
-    flex-direction:column;
-    text-align:center;
-  }
 
   .SobreNos .descricao img{
     display:none;
