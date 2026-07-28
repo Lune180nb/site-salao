@@ -39,27 +39,27 @@ function Produtos({mostrarEsquerda,mostrarDireita,index}){
       <button onClick = { mostrarEsquerda} className = "esquerda">&#10094;</button>
         <div className = "slides">
           <div className = "cards" style = {{transform:`translateX(-${index * 100}%)`}}>
-            <img src = {servico}/>
+            <img src = {servico} alt = "imagem de uma pessoa fazendo manicure"/>
             <h2>Manicure & Pedicure</h2>
             <p>Cuidados completos para mãos e pés, com acabamento impecável, higiene e atenção aos detalhes.</p>
             <a href = "#" className = "link-whatsapp">Agenda aqui</a>
           </div>
             <div className = "cards" style = {{transform:`translateX(-${index * 100}%)`}}>
-            <img src = {servico2}/>
+            <img src = {servico2} alt = "imagem de uma pessoa fazendo coloração de uma cliente"/>
             <h2>Coloração</h2>
             <p>
 Transforme o visual com técnicas de coloração, luzes e retoques realizados com produtos de alta qualidade.</p>
             <a href = "#" className = "link-whatsapp">Agenda aqui</a>
           </div>
             <div className = "cards" style = {{transform:`translateX(-${index * 100}%)`}}>
-            <img src = {servico3}/>
+            <img src = {servico3} alt = "imagem de uma pessoa cortando cabelo"/>
             <h2>Corte & Finalização</h2>
             <p>
 Realce seu estilo com cortes modernos e finalizações feitas para valorizar a sua beleza e personalidade.</p>
             <a href = "#" className = "link-whatsapp">Agenda aqui</a>
           </div>
                     <div className = "cards" style = {{transform:`translateX(-${index * 100}%)`}}>
-            <img src = {servico4}/>
+            <img src = {servico4} alt = "imagem de uma pessoa fazendo exague no cabelo de uma cliente"/>
             <h2>Tratamentos Capilares</h2>
             <p>
 Recupere a saúde dos fios com hidratação, nutrição e reconstrução para cabelos mais fortes, macios e brilhantes.</p>

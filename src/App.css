@@ -30,12 +30,13 @@ header h2{
   color:#ffffff;
 }
 
-header nav ul{
+header nav div{
   display:flex;
+  align-items: center;
   gap:1rem;
 }
 
-header nav a,.menuResponsivo ul a{
+header nav a,.menuResponsivo div a{
   color:#ffffff;
   text-decoration: none;
   font-size: 1.4rem;
@@ -55,14 +56,14 @@ header .link-agendar{
   transition:transform 0.5s ease, background-color 0.5s ease;
 }
 
-header .link-agendar:hover, .menuResponsivo ul .link-agendar-responsivo:hover{
+header .link-agendar:hover, .menuResponsivo div .link-agendar-responsivo:hover{
   transform: scale(1.1);
   background-color:#DDD113;
   box-shadow: 0 0 8px 2px #DDD113;
   color:#000;
 }
 
-header nav a:hover,.menuResponsivo ul a:hover{
+header nav a:hover,.menuResponsivo div a:hover{
   color:#D4AF37;
   transform: scale(1.1);
 }
@@ -103,7 +104,7 @@ header nav a:hover,.menuResponsivo ul a:hover{
   z-index: 1;
 }
 
-.menuResponsivo ul{
+.menuResponsivo div{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -569,7 +570,7 @@ header{
     font-size:1.5rem;
   }
 
-  header nav ul{
+  header nav div{
     display:none;
   }
 
@@ -650,6 +651,14 @@ header{
     min-width: 100%;
     max-width: 500px;
   }
+  
+  .Footer .horario{
+    flex-direction:column;
+    gap:.5rem;
+    padding: 2rem;
+  }
+  
+  
 }
 
 /* Celulares */
@@ -738,12 +747,6 @@ header{
   
   .Footer .descricao-footer p{
     display: none;
-  }
-
-  .Footer .horario{
-    flex-direction:column;
-    gap:.5rem;
-    padding: 2rem;
   }
 
   .Footer a{

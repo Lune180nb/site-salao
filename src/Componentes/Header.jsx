@@ -32,12 +32,12 @@ function Header(){
   return(<>
     <header>
       <nav>
-        <ul ref = {cardRef} className = "esquerda">
+        <div ref = {cardRef} className = "esquerda">
           <a href = "#Hero">Incio</a>
           <a href = "#Servicos">Serviços</a>
           <a href = "#SobreNos">Sobre nós</a>
           <a href = "#Contato">Contato</a>
-        </ul>
+        </div>
         
         <button ref = {cardRef4} onClick = {navResponsivo} className = {aberto ? "button-responsivo desativado":"button-responsivo esquerda"}><FaBars/></button>
         <button onClick = {navResponsivo} className = {aberto ? "button-voltar ativo":"button-voltar"}><FaTimes/></button>
@@ -48,13 +48,13 @@ function Header(){
       <a href = "#" ref = {cardRef3} className = "link-agendar direita">Agendar</a>
     </header>
     <div className = {aberto ? "menuResponsivo ativo": "menuResponsivo"}>
-      <ul>
-          <a onClick = {navResponsivo} href = "#Hero">Incio</a>
-          <a onClick = {navResponsivo} href = "#Servicos">Serviços</a>
-          <a onClick = {navResponsivo} href = "#SobreNos">Sobre nós</a>
-          <a onClick = {navResponsivo} href = "#Contato">Contato</a>
-          <a href = "#" ref = {cardRef3} className = "link-agendar-responsivo">Agendar</a>
-        </ul>
+      <div>
+        <a onClick = {navResponsivo} href = "#Hero">Incio</a>
+        <a onClick = {navResponsivo} href = "#Servicos">Serviços</a>
+        <a onClick = {navResponsivo} href = "#SobreNos">Sobre nós</a>
+        <a onClick = {navResponsivo} href = "#Contato">Contato</a>
+        <a href = "#" ref = {cardRef3} className = "link-agendar-responsivo">Agendar</a>
+        </div>
     </div>
   </>)
 }
