@@ -17,12 +17,15 @@ header {
   align-items: center;
   justify-content: space-between;
   align-items: center;
+  
   padding: 2rem 4rem;
-  background-color:#000;
+  
   position: sticky;
   top:0;
   width:100%;
   z-index: 2;
+  
+  background-color:#000;
 }
 
 header h2{
@@ -33,27 +36,30 @@ header h2{
 header nav div{
   display:flex;
   align-items: center;
+  
   gap:1rem;
 }
 
 header nav a,.menuResponsivo div a{
-  color:#ffffff;
   text-decoration: none;
   font-size: 1.4rem;
   transition: transform 0.5s;
+  color:#ffffff;
 }
 
 header .link-agendar{
-  background-color:#B76E79;
-  color:#ffffff;
   padding: 1.4rem;
-  text-align: center;
   width:100%;
   max-width: 200px;
+  margin:0 2rem;
+  
+  transition:transform 0.5s ease, background-color 0.5s ease;
+  
+  background-color:#B76E79;
+  color:#ffffff;
+  text-align: center;
   border-radius: 2rem;
   text-decoration: none;
-  margin:0 2rem;
-  transition:transform 0.5s ease, background-color 0.5s ease;
 }
 
 header .link-agendar:hover, .menuResponsivo div .link-agendar-responsivo:hover{
@@ -70,11 +76,13 @@ header nav a:hover,.menuResponsivo div a:hover{
 
 .button-responsivo,.button-voltar{
   display: none;
+  
+  font-size:2rem;
+  margin-top:0.4rem;
+  
   color:#fff;
   background-color:transparent;
   border:none;
-  font-size:2rem;
-  margin-top:0.4rem;
 }
 
 .button-voltar.ativo{
@@ -92,16 +100,19 @@ header nav a:hover,.menuResponsivo div a:hover{
   align-items: center;
   
   min-height: 19vh;
+  width:100%;
+  
   background-color:#000;
   border-top:2px solid #ffffff;
+  
   position: fixed;
   top:118px;
   left:0;
-  width:100%;
-  transform: translateY(-100%);
-  pointer-events: none;
-  transition:transform 0.5s ease;
   z-index: 1;
+  
+  pointer-events: none;
+  transform: translateY(-100%);
+  transition:transform 0.5s ease;
 }
 
 .menuResponsivo div{
@@ -115,15 +126,16 @@ header nav a:hover,.menuResponsivo div a:hover{
 }
 
 .link-agendar-responsivo{
-  background-color:#B76E79;
-  color:#ffffff;
   padding: 1rem;
-  text-align: center;
   width:100%;
   max-width: 200px;
-  border-radius: 2rem;
-  text-decoration: none;
   margin:0 2rem;
+  
+  text-decoration: none;
+  border-radius: 2rem;
+  text-align: center;
+  background-color:#B76E79;
+  color:#ffffff;
   transition:transform 0.5s ease, background-color 0.5s ease;
 }
 
@@ -138,11 +150,12 @@ header nav a:hover,.menuResponsivo div a:hover{
   align-items: center;
   
   min-height: 50vh;
+  padding: 2rem 4rem;
+  
   background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('Hero.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 2rem 4rem;
 }
 
 .Hero .info-hero{
@@ -152,15 +165,17 @@ header nav a:hover,.menuResponsivo div a:hover{
 }
 
 .Hero .info-hero .link-whatsapp{
-  background-color:#B76E79;
-  color:#ffffff;
   padding: 1.4rem;
-  text-align: center;
   width:100%;
   max-width: 300px;
+  margin-top:2rem;
+  
+  text-align: center;
   border-radius: 2rem;
   text-decoration: none;
-  margin-top:2rem;
+  
+  background-color:#B76E79;
+  color:#ffffff;
   transition:transform 0.5s ease, background-color 0.5s ease;
 }
 
@@ -206,14 +221,16 @@ header nav a:hover,.menuResponsivo div a:hover{
   justify-content: space-evenly;
   align-items: center;
   
-  background-color:#000;
   min-height:50vh;
+  
+  background-color:#000;
 }
 
 .Produtos .info-produtos{
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  
   width:100%;
 }
 
@@ -243,16 +260,26 @@ header nav a:hover,.menuResponsivo div a:hover{
   display: flex;
   justify-content: center;
   align-items: center;
+  
   gap:2rem;
 }
 
+.Produtos .produtos-servicos .janela{
+  width:600px;
+  overflow:hidden;
+}
 
 .Produtos .produtos-servicos .slides{
   display: flex;
-  overflow:hidden;
-  max-width: 600px;
+  transition: transform .5s ease;
 }
 
+.Produtos .produtos-servicos .slides .cards img{
+  width:100%;
+  height:300px;
+  border-radius: 2rem 2rem 0 0;
+  object-fit:cover;
+}
 
 .Produtos .produtos-servicos .slides  .cards{
   display: flex;
@@ -260,7 +287,8 @@ header nav a:hover,.menuResponsivo div a:hover{
   align-items: center;
   flex-direction: column;
   
-  min-height:400px;
+  min-height:300px;
+  min-width:600px;
   background-color:#ffffff;
   border-radius: 2rem;
   text-align: center;
@@ -269,16 +297,17 @@ header nav a:hover,.menuResponsivo div a:hover{
 }
 
 .Produtos .produtos-servicos .slides .cards .link-whatsapp{
-  background-color:#B76E79;
-  color:#ffffff;
   padding: 1rem;
   text-align: center;
-  transition: transform 0.5s ease;
   width:100%;
   max-width: 200px;
+  margin:2rem 2rem;
   border-radius: 2rem;
   text-decoration: none;
-  margin:2rem 2rem;
+  
+  transition: transform 0.5s ease;
+  background-color:#B76E79;
+  color:#ffffff;
   transition:transform 0.5s ease, background-color 0.5s ease;
 }
 
@@ -289,20 +318,15 @@ header nav a:hover,.menuResponsivo div a:hover{
   color:#000;
 }
 
-.Produtos .produtos-servicos .slides .cards img{
-  width:600px;
-  border-radius:2rem 2rem 0 0;
-  object-fit: cover;
-}
-
 .Produtos .produtos-servicos button{
-  background-color:transparent;
   box-shadow: 0 0 8px 1px #ffffff;
   padding: 1rem;
   height: 4rem;
   border-radius: 1rem;
   font-size:1.5rem;
   border:none;
+  
+  background-color:transparent;
   color:#B76E79;
  
   transform: translateY(-50%);
@@ -319,12 +343,14 @@ header nav a:hover,.menuResponsivo div a:hover{
 /*Sobre nós*/
 
 .SobreNos{
-  min-height:50vh;
   display: flex;
   flex-direction:column;
-  justify-content: space-evenly;
   align-items: center;
+  justify-content: space-evenly;
+  
+  min-height:50vh;
   padding: 2rem 4rem;
+  
   background-color:pink;
 }
 
@@ -351,7 +377,7 @@ header nav a:hover,.menuResponsivo div a:hover{
 .SobreNos .descricao img{
   border-radius:2rem;
   width:100%;
-  min-width:600px;
+  max-width:600px;
 }
 
 /*-----------------*/
@@ -359,11 +385,13 @@ header nav a:hover,.menuResponsivo div a:hover{
 /*Contato*/
 
 .Contato{
-  min-height: 30vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  
+  min-height: 30vh;
+  
   background-color:#B76E79;
   color:#ffffff;
 }
@@ -372,6 +400,7 @@ header nav a:hover,.menuResponsivo div a:hover{
   display: flex;
   justify-content: space-around;
   align-items: center;
+  
   width:100%;
 }
 
@@ -399,6 +428,7 @@ header nav a:hover,.menuResponsivo div a:hover{
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  
   gap:1rem;
   
 }
@@ -411,12 +441,14 @@ header nav a:hover,.menuResponsivo div a:hover{
   display: flex;
   justify-content: center;
   align-items: center;
+  gap:0.4rem;
+  
   padding: 2rem;
   width:100%;
+  
   text-decoration: none;
   border:2px solid #ffffff;
   color:#ffffff;
-  gap:0.4rem;
   font-size:clamp(1rem,4vw,1.5rem);
   transition:background-color  0.5s ease,box-shadow 0.5s ease;
 }
@@ -434,9 +466,11 @@ header nav a:hover,.menuResponsivo div a:hover{
 .Footer{
   display: flex;
   flex-direction: column;
-  min-height:30vh;
   justify-content: space-around;
   align-items: center;
+  
+  min-height:30vh;
+  
   background-color: #000;
   color:#ffffff;
 }
@@ -444,9 +478,11 @@ header nav a:hover,.menuResponsivo div a:hover{
 .Footer .descricao-footer{
   display: flex;
   justify-content: space-around;
+  
   width:100%;
-  font-size:clamp(1.2rem,5vw,1.4rem);
   padding: 2rem 4rem;
+  
+  font-size:clamp(1.2rem,5vw,1.4rem);
 }
 
 
@@ -458,12 +494,14 @@ header nav a:hover,.menuResponsivo div a:hover{
 
 .Footer a{
   display: inline-block;
+  
   padding: 2rem;
-  border-radius: 2rem;
-  color:#ffffff;
-  border:2px solid #ffffff;
-  font-size: clamp(1rem,5vw,1.4rem);
   margin:0 2rem;
+  
+  border-radius: 2rem;
+  border:2px solid #ffffff;
+  color:#ffffff;
+  font-size: clamp(1rem,5vw,1.4rem);
   transition: background-color 0.5s ease, box-shadow 0.5s ease;
 }
 
@@ -607,9 +645,11 @@ header{
     flex-direction:column;
     justify-content: center;
     align-items: center;
-    text-align: center;
     gap:2rem;
+    
     padding: 2rem;
+    
+    text-align: center;
   }
   
   .Produtos .info-produtos h2{
@@ -618,20 +658,6 @@ header{
 
   .Produtos .produtos-servicos{
     gap:.5rem;
-  }
-
-  .Produtos .produtos-servicos .slides{
-    width:100%;
-    max-width:400px;
-  }
-
-  .Produtos .produtos-servicos .slides .cards{
-    min-height:auto;
-  }
-
-  .Produtos .produtos-servicos .slides .cards img{
-    width:100%;
-    min-width:400px;
   }
 
   .Produtos .produtos-servicos button{
@@ -698,6 +724,19 @@ header{
   .Produtos{
     padding:4rem 2rem;
   }
+  
+  .Produtos .produtos-servicos .janela{
+  width:340px;
+}
+
+  .Produtos .produtos-servicos .slides .cards{
+  min-width:340px;
+}
+
+  .Produtos .produtos-servicos .slides .cards img{
+  height:220px;
+  max-width:600px;
+}
 
   /* Sobre nós */
 
@@ -757,6 +796,26 @@ header{
   .Footer hr{
     margin:1rem 0;
   }
+}
+
+@media(max-width:480px){
+  
+  .Produtos .produtos-servicos .janela{
+  width:300px;
+}
+
+  .Produtos .produtos-servicos .slides .cards{
+  min-width:300px;
+}
+ .Produtos .produtos-servicos .slides .cards p{
+   width:100%;
+   max-width:260px;
+ }
+
+.Produtos .produtos-servicos .slides .cards img{
+  height:auto;
+  max-width:320px;
+}
 }
 /*-----------------*/
 
